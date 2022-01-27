@@ -52,12 +52,10 @@ export const TheEntrance: React.FC<BMProps> = (props) => {
         const idx = (i18nSupportedLngs.findIndex(l => l === i18n.language) + 1) % i18nSupportedLngs.length
         i18n.changeLanguage(i18nSupportedLngs[idx])
       }}>
-        <TranslateIcon />
       </Button>
-      <h2>Binaural Meet</h2>
+      <h2>Demo Spatial Audio</h2>
       <p>
-        <img style={{float: 'right', width:'28em'}} src={i18n.language === 'ja' ? usageJa : usageEn}
-          alt="usage" />
+
         {t('enAbout')}&nbsp;
       <a href={t('enTopPageUrl')}>{t('enMoreInfo')}</a>
       </p>
